@@ -61,10 +61,10 @@ final class EntitySamlConfiguration implements Serializable
         NameIdFormat $preferredNameIdFormat,
         NameIdFormatList $allowedNameIdFormats,
         CertificateList $certificateList,
-        Endpoint $singleLogoutService,
-        Endpoint $responseProcessingService,
+        Endpoint $singleLogoutService = null,
+        Endpoint $responseProcessingService = null,
         ContactPersonList $contactPersons,
-        Organization $organization = null // <- verify
+        Organization $organization = null
     ) {
         $this->preferredNameIdFormat     = $preferredNameIdFormat;
         $this->allowedNameIdFormats      = $allowedNameIdFormats;

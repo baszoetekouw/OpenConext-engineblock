@@ -25,7 +25,7 @@ class IdentityProviderSamlConfiguration implements Serializable
 
     public function __construct(
         EntitySamlConfiguration $entitySamlConfiguration,
-        SingleSignOnServices $singleSignOnServices,
+        SingleSignOnServices $singleSignOnServices, 
         ShibbolethMetadataScopeList $shibbolethMetadataScopeList
     ) {
         $this->entitySamlConfiguration     = $entitySamlConfiguration;
