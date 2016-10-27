@@ -25,6 +25,11 @@ module.exports = function(grunt) {
                         'bower_components/underscore/underscore.js',
                         '<%= config.theme %>/javascripts/application.js'
                     ]
+                },
+                options: {
+                    beautify: {
+                        quote_keys: true,
+                    },
                 }
             }
         },
